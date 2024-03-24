@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto&display=swap');
+
+body {
+    background-color: rgba(255,255,255);
+    margin: 0;
+}
+
+.container-wide {
+    width: 100%;
+}
+
+.row {
+    padding: 15px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.col {
+    padding: 15px;
+    flex-basis: 30%;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 0px 15px 50px 15px;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0px 0px 15px #eee;
+    padding: 0;
+}
+
+nav .col:nth-child(2) {
+    text-align: center;
+}
+
+nav .col:nth-child(3) {
+    text-align: right;
+}
+
+nav img {
+    height: 50px;
+    width: auto;
+}
+
+ul.socials {
+    margin: 0;
+    padding: 0;
+}
+
+ul.socials li {
+    display: inline-block;
+}
+
+ul.socials img {
+    width: 48px;
+    height: auto;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    transition: 0.2s ease;
+}
+
+ul.socials img:hover {
+    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+}
+
+nav .talk {
+    background-color: rgb(24,24,24);
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;;
+    text-decoration: none;
+    border-radius: 25px;
+    padding: 10px 25px;
+    font-size: 16px;
+    transition: 0.2s ease-in-out;
+}
+
+nav .talk:hover {
+    background-color: rgb(255, 231, 103);
+    color: #000;
+}
+
+header {
+    margin-top: 100px;
+}
+
+h2 {
+    font-size: 72px;
+}
+
+header h2 {
+    margin-top: 100px;
+}
+
+p {
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.video {
+    content: "";
+    background-image: url('assets/abstract-bg.gif');
+    min-height: 600px;
+    width: 100%;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+p.sectionTitle {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1024px) {
+    .col {
+        flex-basis: 50%;
+    }
+
+    .video {
+        min-height: 300px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .row {
+        flex-wrap: wrap;
+    }
+
+    h2 {
+        font-size: 50px;
+    }
+
+    .col {
+        flex-basis: 100%;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    nav .col:nth-child(3){
+        display: none;
+    }
+}
