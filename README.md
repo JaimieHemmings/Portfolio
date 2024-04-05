@@ -1,4 +1,4 @@
-<a name="readme-top"></a>
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3bb97582-c8fe-42f8-a936-aebd1b4cdc52/deploy-status)](https://app.netlify.com/sites/portfoliotemporary/deploys)
 
 
 <h3 align="center">Placeholder Portfolio</h3>
