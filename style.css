@@ -323,4 +323,13 @@ p.sectionTitle {
     .whatwedo ul li {
         font-size: 32px;
     }
+
+    .portfolio-grid {
+        grid-column-gap: 10px;
+        grid-row-gap: 2px;
+    }
+    
+    .item-3:hover svg {
+        display: none;
+    }
 }
