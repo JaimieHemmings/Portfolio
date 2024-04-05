@@ -16,6 +16,7 @@ body {
 .row {
     padding: 15px;
     display: flex;
+    flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
@@ -24,6 +25,7 @@ body {
 .col {
     padding: 15px;
     flex-basis: 40%;
+    max-width: 100%;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -41,6 +43,7 @@ nav {
     background-color: #fff;
     box-shadow: 0px 0px 15px #eee;
     padding: 0;
+    z-index: 99;
 }
 
 nav .col:nth-child(2) {
@@ -218,6 +221,7 @@ p.sectionTitle {
     bottom: 50px;
     right: 50px;
     transition: 0.5s ease;
+    z-index: 2;
 }
 
 .item-3:hover {
@@ -279,6 +283,29 @@ p.sectionTitle {
 
     .col {
         flex-basis: 100%;
+    }
+
+    nav .row {
+        justify-content: space-around;
+    }
+
+    nav .col{
+        flex-basis: 25%;
+        padding: 0;
+        gap: 15px;
+    }
+
+    .item-3 {
+        background-color: rgb(255, 231, 103);
+    }
+
+    .item-3 svg {
+        position: absolute;
+        bottom: 15px;
+        right: 15px;
+        transition: 0.5s ease;
+        width: 30px;
+        height: 30px;
     }
 }
 
