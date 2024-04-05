@@ -309,10 +309,18 @@ p.sectionTitle {
         width: 30px;
         height: 30px;
     }
+
+    .whatwedo ul li {
+        font-size: 42px;
+    }
 }
 
 @media screen and (max-width: 568px) {
     nav .col:nth-child(3){
         display: none;
+    }
+
+    .whatwedo ul li {
+        font-size: 32px;
     }
 }
